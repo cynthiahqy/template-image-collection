@@ -25,12 +25,25 @@ to match remote:
 git submodule update --remote --rebase
 ```
 
+## Folder & File Naming conventions
+
+Folders:
+
+- `illustrations` is for anything hand-drawn
+- `screenshots` is for screenshots
+- `plots` is for programmatically generated plots (e.g. using ggplot2)
+
+File prefixes:
+
+- `diagram_`
+- `icon_`
+
 ## Useful ImageMagick Commands
 
 Crop & transparent background:
 
 ``` zsh
-convert filename.png -trim -transparent white filename.png
+magick convert filename.png -trim -transparent white filename.png
 ```
 
 For details see:
@@ -42,9 +55,11 @@ To make sure this README renders every time you add a new commit, move
 the file `pre-commit` to `.git/hooks/` and make the script executable:
 `chmod +x .git/hooks/pre-commit`
 
-## Images
+To skip the render when you commit add the `--no-verify` flag:
 
-Make sure to render README.qmd again after adding new images
+    git commit --no-verify
+
+## Images
 
 ## Illustrations
 
