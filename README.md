@@ -43,7 +43,8 @@ File prefixes:
 Crop & transparent background:
 
 ``` zsh
-magick convert filename.png -trim -transparent white filename.png
+filename=filename.png
+magick $filename -trim -transparent white $filename
 ```
 
 For details see:
