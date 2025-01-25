@@ -32,6 +32,7 @@ Folders:
 - `illustrations` is for anything hand-drawn
 - `screenshots` is for screenshots
 - `plots` is for programmatically generated plots (e.g. using ggplot2)
+- `graphics` is for diagrams etc produced using figma, pptx etc.
 
 File prefixes:
 
