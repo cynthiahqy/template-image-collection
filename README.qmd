@@ -68,7 +68,7 @@ git commit --no-verify
 #| output: asis
 #| echo: false
 #| cache: false
-dirs <- fs::dir_ls(type = "directory")
+dirs <- fs::dir_ls(type = "directory", recurse = TRUE)
 
 catImages <- function(folder){
   img_files <- fs::dir_ls(folder) |> sort()

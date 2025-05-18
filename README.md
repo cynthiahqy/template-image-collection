@@ -48,12 +48,6 @@ filename=filename.png
 magick $filename -trim -transparent white $filename
 ```
 
-Multi-page pdfs:
-
-```zsh
-magick -quality 100 -density 200 ${filename}.pdf ${filename}-%02d.png
-```
-
 For details see:
 <https://www.cynthiahqy.com/posts/imagemagick-basic-trim/>
 
@@ -68,6 +62,8 @@ To skip the render when you commit add the `--no-verify` flag:
     git commit --no-verify
 
 ## Images
+
+## Graphics
 
 ## Illustrations
 
